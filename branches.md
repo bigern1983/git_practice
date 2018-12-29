@@ -43,6 +43,26 @@ git branch -d test_branch
 git push --delete origin master
 ```
 
+### Fast Forward Merge
 
+If a linear path from the current branch to the top of the target branch exists git will execute a fast forward merge. It just moves the branch tip forwards up to the end end of the target branch. 
+
+### 3 Way Merge
+
+If there is no linear path, i.e. there are new features in both branches git has not choice but to perform a 3 way merge. 
+
+### Conflicts
+
+When the same parts of the same file are different in the branches git won't be able to figure out which version to keep. This is a conflict. 
+
+When git finds a conflict it edits the required file to highlight the conflict. 
+
+```
+here is some content not affected by the conflict
+<<<<<<< master
+this is conflicted text from master
+=======
+this is conflicted text from feature branch
+```
 
 
