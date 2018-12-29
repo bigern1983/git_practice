@@ -23,7 +23,7 @@ Before merging there are a couple of steps to ensure the merge goes smoothly.
 
 * Once prepared to merge run git merge branch name where branch name is the name of the branch that will be merged into the current receiving branch. 
 
-```
+```bash
 #start a new branch 
 git checkout -b test_branch master
 #add some files
@@ -57,7 +57,7 @@ When the same parts of the same file are different in the branches git won't be 
 
 When git finds a conflict it edits the required file to highlight the conflict. 
 
-```
+```bash
 here is some content not affected by the conflict
 <<<<<<< master
 this is conflicted text from master
